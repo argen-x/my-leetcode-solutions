@@ -39,7 +39,7 @@ Here's my plan to master DSA. As someone without a CS background, I always find 
 <h2> WEEK1 - 08/04/2022 </h2>
 
 <ul>
-<li> Tima and SPace Complexity 1-16 </br>
+<li> Time and Space Complexity 1-16 </br>
   https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O
   </li>
 </ul>
