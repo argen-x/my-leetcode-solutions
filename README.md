@@ -7,6 +7,7 @@ My solutions to some LeetCode problems can be found above. </br>
 <h2> Goal by May 2022 </h2>
 1. 100 problems </br>
 - (current 52/100) - updated on 8th of April
+- (current 57/100) - updated on 13th of April
 </br>
 </br>
 <h2> Goal by July 2022 </h2>
