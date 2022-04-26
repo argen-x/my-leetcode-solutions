@@ -1,5 +1,5 @@
-<h1>MY LEETCODE SOLUTIONS</h1>
-My solutions to some LeetCode problems can be found above. </br>
+<h1>CODING PRACTICE - MY LEETCODE SOLUTIONS</h1>
+Coding practice. My solutions to some LeetCode problems can be found above. </br>
 <br>
 <h1>MY GOAL</h1>
 
