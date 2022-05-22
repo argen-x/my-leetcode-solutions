@@ -8,7 +8,8 @@ Coding practice. My solutions to some LeetCode problems can be found above. </br
 1. 100 problems </br>
 - (current 52/100) - updated on 8th of April </br>
 - (current 57/100) - updated on 13th of April </br>
-- (current 66/100) - updated on 24th of April
+- (current 66/100) - updated on 24th of April </br>
+- (current 71/100) - updated on 22th of May
 </br>
 </br>
 <h2> Goal by July 2022 </h2>
