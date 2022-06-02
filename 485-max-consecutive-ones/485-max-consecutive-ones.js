@@ -13,8 +13,6 @@ var findMaxConsecutiveOnes = function(nums) {
                         if(count<=precount){
                            count = precount;      
                         }
-                        console.log(count);
-                        console.log(precount);
                 }else{
                         if(count<=precount){
                            count = precount;     
