@@ -5,8 +5,7 @@
  */
 var minMovesToSeat = function(seats, students) {
     
-    let seatSort = seats.sort((a, b) => a-b)
-    let stuSort = students.sort((a, b) => a-b)
+    let seatSort = seats.sort((a, b) => a-b), stuSort = students.sort((a, b) => a-b)
 
     let total = 0
     for(let i = 0; i<seats.length; i++){
