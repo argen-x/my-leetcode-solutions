@@ -19,13 +19,11 @@ var nearestValidPoint = function(x, y, points) {
     }
 
     let mAsc = new Map([...m].sort((a, b) => a-b));
-    console.log(mAsc)
     
     let [firstValue] = mAsc.values()
     let [firstKey] = mAsc.keys()
     
     for (const [key, value] of mAsc) {
-        console.log(key, value)
         if(value < firstValue){            
             firstValue = value
             firstKey = key
