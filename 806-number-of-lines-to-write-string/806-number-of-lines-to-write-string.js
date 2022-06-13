@@ -16,7 +16,6 @@ var numberOfLines = function(widths, s) {
               let ind = abc.indexOf(s[i])
               sumIn = sumIn + widths[ind]
               let ind_1 = abc.indexOf(s[i+1])
-              console.log(sumIn)
               if(n-1 === i){
                    sumArr.push(sumIn);
                    count++;
