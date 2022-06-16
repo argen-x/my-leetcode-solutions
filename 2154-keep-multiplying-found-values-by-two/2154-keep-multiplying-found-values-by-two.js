@@ -5,16 +5,10 @@
  */
 var findFinalValue = function(nums, original) {
     
-    let orig = original
-    while(nums.includes(orig)){
-        for(let x of nums){
-            if(x==orig){
-                orig*=2
-                break
-            }
-        }
+    while(nums.includes(original)){
+        original*=2
     }
     
-    return orig
+    return original
     
 };
