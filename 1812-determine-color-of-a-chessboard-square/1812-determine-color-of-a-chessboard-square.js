@@ -3,11 +3,7 @@
  * @return {boolean}
  */
 var squareIsWhite = function(coordinates) {
-    let white = ['b', 'd', 'f', 'h']
-    
-    if(white.includes(coordinates[0])){
-       return coordinates[1] % 2 != 0  
-    }else{
-       return  coordinates[1] % 2 == 0
-    }
+    let white = [...('bdfh')]
+
+    return white.includes(coordinates[0]) ? coordinates[1] % 2 != 0 : coordinates[1] % 2 == 0
 };
