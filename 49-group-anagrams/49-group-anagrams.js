@@ -19,7 +19,6 @@ var groupAnagrams = function(strs) {
         }
     }
     
-    console.table(group)
     let out = []
     for(let [key, value] of group){
         out.push(value)
