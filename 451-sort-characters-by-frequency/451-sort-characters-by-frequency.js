@@ -25,12 +25,10 @@ var frequencySort = function(s) {
         }
     }
     
-    console.table(m2)
     const sortM1 = new Map([...m].sort((a, b) => b[1] - a[1]));
     
     let out = []
     for(let [key, value] of sortM1){
-        console.log(key)
         out.push(m2.get(key).join(''))
     }
     
