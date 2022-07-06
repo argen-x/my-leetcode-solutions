@@ -8,14 +8,13 @@ var findDuplicate = function(nums) {
         for(let x of nums){
                 if(m.has(x)){
                     let inc = m.get(x)
+                    inc++
+                    if(inc>1) return x
                     m.set(x, inc+1)
                 }else{
                     m.set(x, 1)    
                 }
         }
-        
-        for(let [key, value] of m){
-                if(value > 1) return key
-        }
+     
         
 };
