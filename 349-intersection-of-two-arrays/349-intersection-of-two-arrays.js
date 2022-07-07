@@ -6,23 +6,11 @@
 var intersection = function(nums1, nums2) {
     
     let arr = Array.from(new Set(nums1.concat(nums2)))
-    
-    let map1 = new Map()
-    for(let x of nums1){
-        map1.set(x, 1)
-    }
-    
-    let map2 = new Map()
-    for(let x of nums2){
-        map2.set(x, 1)
-    }
-    
+    let set1 = new Set(nums1), set2 = new Set(nums2)
+
     let out = []
     for(let num of arr){
-        let count = 0
-        if(map1.has(num)) count++
-        if(map2.has(num)) count++
-        if(count == 2) out.push(num)
+        if(set1.has(num) && set2.has(num)) out.push(num) 
     }
     
     return out
