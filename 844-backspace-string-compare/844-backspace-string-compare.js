@@ -6,16 +6,18 @@
 var backspaceCompare = function(s, t) {
     
     
-    while(s.includes('#')){
-        let ind = s.indexOf('#')
-        s = setCharAt(s, ind ,'');
-        s = setCharAt(s, ind-1, '')
-    }
-    
-    while(t.includes('#')){
-        let ind = t.indexOf('#')
-        t = setCharAt(t, ind ,'');
-        t = setCharAt(t, ind-1, '')
+    while(s.includes('#') || t.includes('#')){
+        if(s.includes('#')){
+            let ind = s.indexOf('#')
+            s = setCharAt(s, ind ,'');
+            s = setCharAt(s, ind-1, '')
+        }
+        
+        if(t.includes('#')){
+            let ind = t.indexOf('#')
+            t = setCharAt(t, ind ,'');
+            t = setCharAt(t, ind-1, '')
+        }
     }
 
     return s==t
