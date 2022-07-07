@@ -9,8 +9,7 @@ var secondHighest = function(s) {
             out.push(s[i])
         }
     }
-    let s2 = Array.from(new Set(out))
-    s2.sort((a, b) => b-a)
+    let s2 = Array.from(new Set(out)).sort((a,b) => b-a)
     
     return s2.length > 1 ? Number(s2[1]) : -1
 };
