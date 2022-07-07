@@ -11,14 +11,12 @@ var backspaceCompare = function(s, t) {
         s = setCharAt(s, ind ,'');
         s = setCharAt(s, ind-1, '')
     }
-    console.log(s)
     
     while(t.includes('#')){
         let ind = t.indexOf('#')
         t = setCharAt(t, ind ,'');
         t = setCharAt(t, ind-1, '')
     }
-    console.log(t)
 
     return s==t
 
