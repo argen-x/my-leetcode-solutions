@@ -13,7 +13,6 @@ var intersect = function(nums1, nums2) {
             map1.set(num, 1)
         }
     })
-    console.table(map1)
     
     let map2 = new Map()
     nums2.forEach(num => {
@@ -24,7 +23,6 @@ var intersect = function(nums1, nums2) {
             map2.set(num, 1)
         }
     })
-    console.table(map2)
     
     let arr = Array.from(new Set(nums1.concat(nums2)))
     let out = []
