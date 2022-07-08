@@ -56,7 +56,6 @@ var shortestCompletingWord = function(licensePlate, words) {
     }
     
     let mSorted = new Map([...m].sort((a, b) => a[1] - b[1]))
-    console.table(mSorted)
     
     let prevValue = Infinity
     let out2 = new Map()
@@ -70,12 +69,9 @@ var shortestCompletingWord = function(licensePlate, words) {
     }
     
     let out2Sorted = new Map([...out2].sort((a, b) => a[1] - b[1]))
-    console.table(out2Sorted)
     
-    let final = Array.from(out2Sorted.keys())
-    
-    return final[0]
-    
+    return (Array.from(out2Sorted.keys()))[0]
+        
     function isCharacterALetter(char) {
         return (/[a-zA-Z]/).test(char)
     }
