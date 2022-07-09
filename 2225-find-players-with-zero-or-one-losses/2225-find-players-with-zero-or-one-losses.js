@@ -16,7 +16,6 @@ var findWinners = function(matches) {
             mLosers.set(loser, 1)             
          }
     })
-    console.log(allGamers)
 
     let oneLost = []
     for(let [key, value] of mLosers){
