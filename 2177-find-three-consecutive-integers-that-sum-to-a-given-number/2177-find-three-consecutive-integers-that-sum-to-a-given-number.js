@@ -5,10 +5,10 @@
 var sumOfThree = function(num) {
     
         if(num%3 == 0){
-                let x = num/3
-                return [x-1, x, x+1]
-        }else{
-                return []
+                return [num/3-1, num/3, num/3+1]
         }
+        
+        
+        return []
         
 };
