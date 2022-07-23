@@ -4,9 +4,9 @@
  */
 var sumOfThree = function(num) {
     
-        if(num%3 != 0) return []    
-        
-         return [num/3-1, num/3, num/3+1]
+        if(num%3 != 0) return []
+        const x = num/3
+        return [x-1, x, x+1]   
         
         
         
