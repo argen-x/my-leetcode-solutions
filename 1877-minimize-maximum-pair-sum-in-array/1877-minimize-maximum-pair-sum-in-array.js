@@ -9,7 +9,7 @@ var minPairSum = function(nums) {
     let prevValue = 0
     while(low<high){
         let pair = nums[low] + nums[high]    
-        prevValue = prevValue < pair ? pair : prevValue
+        if(pair>prevValue) prevValue = pair
         low++
         high--    
     }    
