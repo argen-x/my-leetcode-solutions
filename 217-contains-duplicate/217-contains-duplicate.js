@@ -3,15 +3,20 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    let answers = [];
-    for(let i = 0; i<nums.length; i++){
-            let dup = nums.filter(num => num == nums[i]);
-            if(dup.length >= 2){
-              return true;
-              break;
-            }
-    }
     
-    return false;
-
+        let m = new Map()
+        nums.forEach(num => {
+                if(m.has(num)){
+                        let inc = m.get(num)
+                        m.set(num, inc+1)
+                }else{
+                        m.set(num, 1)
+                }
+        })
+        
+        for(let [key, value] of m ){
+                if(value>=2) return true
+        }
+        
+        return false
 };
