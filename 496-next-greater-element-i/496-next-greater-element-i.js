@@ -22,9 +22,8 @@ var nextGreaterElement = function(nums1, nums2) {
         for(let [key, value] of nums1_indices){
             let item = -1
             let starts = value;
-            let ends = nums2.length
             
-            while(starts<ends){
+            while(starts<nums2.length){
                 
                 starts++
                 if(indices.has(starts)){
