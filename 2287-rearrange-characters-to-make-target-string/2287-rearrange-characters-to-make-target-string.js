@@ -25,6 +25,7 @@ var rearrangeCharacters = function(s, target) {
                         t.set(l, 1)
                 }
         })
+        
         let out = []
         for(let [key, value] of t){
                 if(m.has(key)){
