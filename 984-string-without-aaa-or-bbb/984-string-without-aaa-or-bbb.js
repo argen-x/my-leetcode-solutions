@@ -5,9 +5,6 @@
  */
 var strWithout3a3b = function(a, b) {
     
-    //Implemented  this one based on the Apples and Bananas explanation
-    //src: https://leetcode.com/problems/string-without-aaa-or-bbb/discuss/508543/APPLES-and-BANANAS-solution-(with-picture)
-    
     let numStartFiller = a, numEndFiller = b
     let charStart = 'a', charEnd = 'b'
     
