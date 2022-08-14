@@ -25,7 +25,7 @@ var minimumAbsDifference = function(arr) {
         }
     }
     
-    let res = [...m.get(minAbs)].sort((a, b) => a[0] - b[0])
+    let res = [...m.get(minAbs)]
     
     return res
     
