@@ -12,7 +12,7 @@ var isSubsequence = function(s, t) {
             }
     }
     
-    if(s_arr.length == 0) return true
+    if(!s_arr.length) return true
     return false
     
 };
