@@ -13,7 +13,7 @@ var minSetSize = function(arr) {
         }
     })
     
-    let s = new Set()
+    let c = 0
     let m_sorted = new Map([...m].sort((a, b) => b[1] - a[1]))
     let n = arr.length
     let count = 0
@@ -23,11 +23,11 @@ var minSetSize = function(arr) {
                 break
             }else{
                 count+=value
-                s.add(key)
+                c++
             }
         
     }
     
-    return s.size
+    return c
     
 };
