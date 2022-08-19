@@ -7,7 +7,6 @@ var maxOperations = function(nums, k) {
     
     let m = new Map()
     nums.forEach(num => m.set(num, m.get(num) == null ? 1 : m.get(num)+1))
-    console.table(m)
     let count = 0
     for(let num of nums){
         if(m.has(k-num) && m.get(num)>0){
