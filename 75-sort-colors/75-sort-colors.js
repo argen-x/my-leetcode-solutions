@@ -5,7 +5,7 @@
 var sortColors = function(nums) {
     
     
-    //Implementing BubbleSort
+    //Tryna Implement the BubbleSort
     let noSwaps
     for(let i = nums.length; i>0; i--){
         noSwaps=true
