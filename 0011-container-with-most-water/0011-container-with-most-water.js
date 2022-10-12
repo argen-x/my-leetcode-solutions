@@ -11,19 +11,14 @@ var maxArea = function(height) {
         
         let leftLine = height[left],
             rightLine = height[right]
-        
-        let hight = Math.min(leftLine, rightLine),
-            width = right - left
-        
-        let area = hight * width
+                
+        let area = Math.min(leftLine, rightLine) * (right - left)
         
         max = Math.max(area, max)
         
-        if(leftLine >= rightLine){
-            right--
-        }else{
-            left++
-        }
+        if(leftLine >= rightLine) right--
+        else  left++
+        
     }
     
     return max
