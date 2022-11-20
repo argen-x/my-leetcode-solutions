@@ -1,16 +1,25 @@
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int left = 0, right = numbers.length-1;
         int[] res = new int[2];
-        for(int i = 0; i<numbers.length; i++){
-            if(map.containsKey(target - numbers[i])){
-                res[0] = map.get(target - numbers[i])+1;
-                res[1] = i+1;
+        while(left < right){
+            
+            int v = numbers[right] + numbers[left];
+            if(v == target){
+                res[0] = left+1;
+                res[1] = right+1;
                 break;
             }
-            map.put(numbers[i], i);
+            
+            if(v < target){
+                left++;
+            }else{
+                right--;
+            }
+            
         }
         return res;
+        
     }
 }
