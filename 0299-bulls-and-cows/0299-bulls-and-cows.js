@@ -13,12 +13,11 @@ var getHint = function(secret, guess) {
         if(secret[i] == guess[i]){
             bulls++
         }else{
-            
             arr.push(guess[i])
             m.set(secret[i], m.get(secret[i]) == null ? 1 : m.get(secret[i])+1)
         }
     }
-    console.table(m)
+    
     for(let x of arr){
         if(m.get(x) > 0){
             cows++
