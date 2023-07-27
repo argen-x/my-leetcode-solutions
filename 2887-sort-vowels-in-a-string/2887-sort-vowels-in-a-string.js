@@ -16,7 +16,6 @@ var sortVowels = function(s) {
 
     // 2. Sort the arr
     arr.sort((a, b) => a - b)
-    console.log(arr)
 
     // 3. Replace and Swap
     let idx = 0
