@@ -1,24 +1,21 @@
-/**
- * @param {string} s
- * @return {string}
- */
+
 var reverseVowels = function(s) {
 
+    let left = 0, right = s.length-1
     let s_arr = s.split('')
-    let arr = []
-    // 1.  Array Initializing.
-    for(let i = 0; i<s_arr.length; i++){
-        if(isVowel(s_arr[i])) arr.push(s_arr[i])
+    while(left < right){
+        let cLeft = s[left], cRight = s[right]
+        if(isVowel(cLeft) && isVowel(cRight)){
+            s_arr[left] = cRight
+            s_arr[right] = cLeft
+            left++
+            right--
+        }else{
+            if(!isVowel(cLeft)) left++
+            if(!isVowel(cRight)) right--
+        }
     }
 
-    // 3. Replace and Swap
-    let idx_end = arr.length-1
-    for(let i = 0; i<s_arr.length; i++){
-        if(isVowel(s_arr[i])){
-          s_arr[i] = arr[idx_end]
-          idx_end--
-        } 
-    }
     return s_arr.join('')
 
 };
